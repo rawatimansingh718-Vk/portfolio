@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iman Rawat | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: #e8eefc;
+      line-height: 1.7;
+    }
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111c31;
+      position: sticky;
+      top: 0;
+    }
+    header h2 { color: #65b8ff; }
+    nav a {
+      color: #e8eefc;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    nav a:hover { color: #65b8ff; }
+    section { padding: 65px 10%; }
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+    }
+    .hero h1 { font-size: 48px; margin-bottom: 12px; }
+    .hero h1 span { color: #65b8ff; }
+    .hero p { color: #bdc9df; max-width: 550px; }
+    .profile {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #65b8ff;
+    }
+    h2.section-title {
+      color: #65b8ff;
+      font-size: 30px;
+      margin-bottom: 22px;
+    }
+    .card {
+      background: #15233b;
+      padding: 24px;
+      border-radius: 14px;
+      margin: 15px 0;
+      border: 1px solid #263c5c;
+    }
+    .card h3 { color: #8bcaff; margin-bottom: 8px; }
+    .card p { color: #bdc9df; }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .skills span {
+      background: #1c3555;
+      color: #a9d8ff;
+      padding: 9px 16px;
+      border-radius: 20px;
+    }
+    a.project-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #65b8ff;
+      text-decoration: none;
+    }
+    a.project-link:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111c31;
+      color: #bdc9df;
+    }
+    @media(max-width: 650px) {
+      header { flex-direction: column; gap: 10px; }
+      nav a { margin: 0 7px; font-size: 14px; }
+      .hero { flex-direction: column-reverse; text-align: center; }
+      .hero h1 { font-size: 36px; }
+      section { padding: 45px 7%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Iman Rawat</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Hello, I'm <span>Iman Rawat</span></h1>
+    <h3>University Student | Technology Enthusiast</h3>
+    <p>
+      Welcome to my personal portfolio. I am a university student
+      interested in programming, technology, and cybersecurity.
+      I enjoy learning new skills and building projects through my coursework.
+    </p>
+  </div>
+  <img class="profile" src="profile.jpg" alt="Portrait of Iman Rawat">
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    <p>
+      I am currently studying at Gachon University. I am developing
+      my knowledge of computer science through practical assignments
+      and projects. My interests include cybersecurity, software
+      development, and exploring new technologies.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Education</h3>
+    <p>Gachon University</p>
+    <p>Undergraduate Student</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>C Programming</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Git & GitHub</span>
+    <span>Ubuntu / Linux</span>
+    <span>VS Code</span>
+    <span>Pandas</span>
+    <span>Machine Learning Basics</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Course Projects</h2>
+
+  <div class="card">
+    <h3>1. Clinical Dataset Classification</h3>
+    <p>A machine learning coursework project using Python, Pandas,
+    and Random Forest classification.</p>
+    <a class="project-link" href="https://github.com/rawatimansingh718-Vk?tab=repositories" target="_blank">View GitHub Projects →</a>
+  </div>
+
+  <div class="card">
+    <h3>2. Operating Systems Laboratory</h3>
+    <p>Practical exercises involving Linux, processes, fork(),
+    and multithreading in Python.</p>
+    <a class="project-link" href="https://github.com/rawatimansingh718-Vk?tab=repositories" target="_blank">View GitHub Projects →</a>
+  </div>
+
+  <div class="card">
+    <h3>3. Web Programming</h3>
+    <p>A collection of web programming exercises using HTML
+    and CSS, including accessibility and performance optimization.</p>
+    <a class="project-link" href="https://rawatimansingh718-vk.github.io/Iman/" target="_blank">Visit Website →</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="card">
+    <p>GitHub:
+      <a class="project-link" href="https://github.com/rawatimansingh718-Vk" target="_blank">My GitHub Profile</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Iman Rawat | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
